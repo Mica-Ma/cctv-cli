@@ -10,7 +10,6 @@ export * from './version'
 
 // 系统user文件夹
 const home = os.homedir();
-
 // user agent
 export const ua = `${name}-${version}`;
 
@@ -20,7 +19,7 @@ export const ua = `${name}-${version}`;
  */
 export const dirs = {
   home,
-  download: `${home}/.temporary-templates`,
+  download: `${home}/.cctv-templates`,
   rc: `${home}/.cctvrc`,
   tmp: os.tmpdir(),
   metalsmith: 'metalsmith'

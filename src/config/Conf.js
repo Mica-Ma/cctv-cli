@@ -86,8 +86,8 @@ export default class Conf {
     return await this.getRemoteConf()
   }
   async getAllRealConf() {
-    const conf = await this.getLocalConf()
-    const allRegistry = constantRegistry.concat(conf.addRegistry)
+    const conf = await this.getLocalConf();
+    const allRegistry = constantRegistry.concat(conf.addRegistry || [])
     delete conf.list
     return Object.assign(
       dirs, 
